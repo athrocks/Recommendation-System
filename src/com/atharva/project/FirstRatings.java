@@ -200,7 +200,8 @@ public class FirstRatings {
         // Rater class ---> raterId, ArrayList<Rating>
         ArrayList<Rater> raterList = new ArrayList<>();
         mpp.forEach((key,value) -> {
-            Rater newRater = new Rater(key);
+//            Rater newRater = new PlainRater(key);
+            Rater newRater = new EfficientRater (key);
             for (Rating r : value) {
                 newRater.addRating(r.getItem(), r.getValue());
             }
