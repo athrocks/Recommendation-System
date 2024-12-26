@@ -8,7 +8,7 @@ public class MovieRunnerAverage {
     public void printAverageRatings(int minRaters){
         SecondRatings sr = new SecondRatings();
         ArrayList<Movie> myMovies = sr.getMyMovies();
-        ArrayList<Rater> myRaters = sr.getMyRaters();
+//        ArrayList<Rater> myRaters = sr.getMyRaters();
 
         myMovies.forEach(movie -> {
             double val = sr.getAverageByID(movie.getID(), minRaters);

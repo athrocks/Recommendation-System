@@ -19,20 +19,6 @@ public class Movie {
         genres = theGenres;
     }
 
-//    public Movie (String anID, String aTitle, String aYear, String theGenres, String aDirector,
-//    String aCountry, String aPoster, int theMinutes) {
-//        // just in case data file contains extra whitespace
-//        id = anID.trim();
-//        title = aTitle.trim();
-//        year = Integer.parseInt(aYear.trim());
-//        genres = theGenres;
-//        director = aDirector;
-//        country = aCountry;
-//        poster = aPoster;
-//        // minutes = theMinutes;
-//        minutes = Integer.parseInt(theMinutes);
-//    }
-
     public Movie (String anID, String aTitle, String aYear, String theGenres, String aDirector,
                   String aCountry, String aPoster, String theMinutes) {
         // just in case data file contains extra whitespace
@@ -82,14 +68,6 @@ public class Movie {
     public int getMinutes(){
         return minutes;
     }
-
-    // Returns a string of the item's information
-//    public String toString () {
-//        String result = "Movie [id=" + id + ", title=" + title + ", year=" + year;
-//        result += ", genres= " + genres + "]";
-//        return result;
-//    }
-
 
     @Override
     public String toString() {

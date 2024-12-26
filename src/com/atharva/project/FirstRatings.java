@@ -26,7 +26,7 @@ public class FirstRatings {
         ArrayList<Movie> movieList = new ArrayList<>();
 
         parser.forEach(record -> {
-            String id =  record.get("id");
+            String id = record.get("id");
             String title = record.get("title");
             String year = record.get("year");
             String country = record.get("country");
@@ -93,16 +93,16 @@ public class FirstRatings {
         FirstRatings obj = new FirstRatings();
 //        ArrayList<Movie> movieList = obj.loadMovies("src/com/atharva/project/data/ratedmoviesfull.csv");
 
-        ArrayList<Movie> movieList = obj.loadMovies("src/com/atharva/project/data/ratedmovies_short.csv");
+//        ArrayList<Movie> movieList = obj.loadMovies("src/com/atharva/project/data/ratedmovies_short.csv");
 //        obj.testLoadMovies(movieList);
 
-        ArrayList<Rater> raterList = obj.loadRaters("src/com/atharva/project/data/ratings_short.csv");
+//        ArrayList<Rater> raterList = obj.loadRaters("src/com/atharva/project/data/ratings_short.csv");
 //        ArrayList<Rater> raterList = obj.loadRaters("src/com/atharva/project/data/ratings.csv");
 //        obj.testLoadRaters(raterList);
 
-        System.out.println(movieList);
-        System.out.println("---------------");
-        System.out.println(raterList);
+//        System.out.println(movieList);
+//        System.out.println("---------------");
+//        System.out.println(raterList);
 
     }
 }

@@ -6,7 +6,7 @@ public class AllFilters implements Filter {
     ArrayList<Filter> filters;
     
     public AllFilters() {
-        filters = new ArrayList<Filter>();
+        filters = new ArrayList<>();
     }
 
     public void addFilter(Filter f) {
@@ -16,7 +16,7 @@ public class AllFilters implements Filter {
     @Override
     public boolean satisfies(String id) {
         for(Filter f : filters) {
-            if (! f.satisfies(id)) {
+            if (!f.satisfies(id)) { // if (! f.satisfies(id)) ==> f.satisfies(id) == false
                 return false;
             }
         }

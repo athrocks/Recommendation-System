@@ -1,31 +1,31 @@
-package com.atharva.project.filters;
+package com.atharva.project;
 
 import java.util.*;
 
-import com.atharva.project.FirstRatings;
-import com.atharva.project.Movie;
+import com.atharva.project.filters.Filter;
 
 public class MovieDatabase {
+    // < MovieId, Movie>
     private static HashMap<String, Movie> ourMovies;
 
     public static void initialize(String moviefile) {
         if (ourMovies == null) {
             ourMovies = new HashMap<String,Movie>();
-            loadMovies("data/" + moviefile);
+            loadMovies("src/com/atharva/project/data/" + moviefile);
         }
     }
 
     private static void initialize() {
         if (ourMovies == null) {
             ourMovies = new HashMap<String,Movie>();
-            loadMovies("data/ratedmoviesfull.csv");
+            loadMovies("src/com/atharva/project/data/ratedmoviesfull.csv");
+//            loadMovies("src/com/atharva/project/data/ratedmovies_short.csv");
         }
-    }	
-
+    }
 	
     private static void loadMovies(String filename) {
         FirstRatings fr = new FirstRatings();
-        ArrayList<Movie> list = fr.loadMovies(filename);
+        ArrayList<Movie> list = fr.loadMovies(filename); // returns all moviesList
         for (Movie m : list) {
             ourMovies.put(m.getID(), m);
         }
@@ -80,9 +80,10 @@ public class MovieDatabase {
         return ourMovies.size();
     }
 
+    // returns id of all movies which satisfies filter
     public static ArrayList<String> filterBy(Filter f) {
         initialize();
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
         for(String id : ourMovies.keySet()) {
             if (f.satisfies(id)) {
                 list.add(id);
