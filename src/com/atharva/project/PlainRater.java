@@ -3,7 +3,8 @@ package com.atharva.project;
 import java.util.*;
 
 // The class Rater keeps track of one rater and all their ratings
-public class PlainRater implements Rater {
+//public class PlainRater implements Rater {
+public class PlainRater {
     private String myID; //  a unique String ID for this rater (raterId)
     private ArrayList<Rating> myRatings;
 

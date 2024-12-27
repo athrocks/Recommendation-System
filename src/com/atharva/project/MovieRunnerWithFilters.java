@@ -164,8 +164,6 @@ public class MovieRunnerWithFilters {
         }
     }
 
-
-
     public static void main(String[] args) {
 
 //        String workingDir = System.getProperty("user.dir");

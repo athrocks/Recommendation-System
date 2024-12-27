@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class EfficientRater implements Rater{
-    private String myID; //  a unique String ID for this rater (raterId)
+    private String myID; // (raterId)
     // <movieId, Rating>
     private HashMap<String,Rating> myRatings;
 
@@ -13,38 +13,26 @@ public class EfficientRater implements Rater{
         myRatings = new HashMap<>();
     }
 
+    public HashMap<String,Rating> getMyRatings() {
+        return myRatings;
+    }
+
 //    (movieId,ratingValue)
     public void addRating(String item, double rating) {
-//        myRatings.add(new Rating(item,rating));
-
         Rating newRating = new Rating(item, rating);
         myRatings.put(item, newRating);
     }
 
     public boolean hasRating(String item) {
-//        for(int k=0; k < myRatings.size(); k++){
-//            if (myRatings.get(k).getItem().equals(item)){
-//                return true;
-//            }
-//        }
-
-        if(myRatings.containsKey(item)) {
-            return true;
-        }
-
-        return false;
+        return myRatings.containsKey(item);
     }
 
+    // returns raterID
     public String getID() {
         return myID;
     }
 
     public double getRating(String item) {
-//        for(int k=0; k < myRatings.size(); k++){
-//            if (myRatings.get(k).getItem().equals(item)){
-//                return myRatings.get(k).getValue();
-//            }
-//        }
         if(hasRating(item)) {
             return myRatings.get(item).getValue();
         }

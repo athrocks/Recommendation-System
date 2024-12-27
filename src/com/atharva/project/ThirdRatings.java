@@ -81,6 +81,6 @@ public class ThirdRatings {
 
 
     public static void main(String[] args) {
-        ThirdRatings secondRatings = new ThirdRatings();
+        ThirdRatings thirdRatings = new ThirdRatings();
     }
 }
