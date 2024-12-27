@@ -12,6 +12,10 @@ Welcome to the **Java Recommendation System** project! This project is a movie r
 
 ---
 
+![img](https://github.com/athrocks/Recommendation-System/blob/main/src/com/atharva/project/data/Screenshot%202024-12-27%20182548.png)
+
+---
+
 ## Prerequisites
 - **Java Development Kit (JDK):** Version 8 or above.
 - **Integrated Development Environment (IDE):** IntelliJ IDEA, Eclipse, or any other preferred IDE.
