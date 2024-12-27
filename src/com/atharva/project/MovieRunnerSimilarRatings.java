@@ -214,19 +214,19 @@ public class MovieRunnerSimilarRatings {
 
     public static void main(String[] args) {
         MovieRunnerSimilarRatings mr = new MovieRunnerSimilarRatings();
-        mr.printAverageRatings();
-        System.out.println("----------------------------");
-        mr.printAverageRatingsByYearAfterAndGenre();
-        System.out.println("----------------------------");
-        mr.printSimilarRatings();
-        System.out.println("----------------------------");
-        mr.printSimilarRatingsByGenre();
-        System.out.println("----------------------------");
-//        mr.printSimilarRatingsByDirector();
-        System.out.println("----------------------------");
-        mr.printSimilarRatingsByGenreAndMinutes();
-        System.out.println("----------------------------");
-        mr.printSimilarRatingsByYearAfterAndMinutes();
-        System.out.println("----------------------------");
+//        mr.printAverageRatings();
+//        System.out.println("----------------------------");
+//        mr.printAverageRatingsByYearAfterAndGenre();
+//        System.out.println("----------------------------");
+//        mr.printSimilarRatings();
+//        System.out.println("----------------------------");
+//        mr.printSimilarRatingsByGenre();
+//        System.out.println("----------------------------");
+//        mr.printSimilarRatingsByDirectors();
+//        System.out.println("----------------------------");
+//        mr.printSimilarRatingsByGenreAndMinutes();
+//        System.out.println("----------------------------");
+//        mr.printSimilarRatingsByYearAfterAndMinutes();
+//        System.out.println("----------------------------");
     }
 }
